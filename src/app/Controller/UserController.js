@@ -22,7 +22,7 @@ class UserController {
 
         let validation = yup.object().shape({
             name: yup.string().required(),
-            email: yup.string().required(),
+            email: yup.string().email().required(),
             password: yup.string().required()
         });
 
